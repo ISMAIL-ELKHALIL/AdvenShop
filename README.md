@@ -1,6 +1,6 @@
 # Adventure Shop
 
-![Adventure Shop Logo]('https://res.cloudinary.com/dhc2luf6h/image/upload/v1703081559/logo_gdybmn.png')
+![Adventure Shop Logo](https://res.cloudinary.com/dhc2luf6h/image/upload/v1703082064/logo_a9yvkc.png)
 
 Adventure Shop is your go-to destination for high-quality hiking products, providing everything you need for a thrilling mountain adventure.
 
