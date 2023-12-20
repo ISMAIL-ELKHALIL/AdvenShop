@@ -63,7 +63,7 @@ section {
   padding: 5rem 0;
   width: 100%;
   height: 100%;
-  background: #000000a1;
+  background: #00000018;
 }
 
 .bold {
@@ -163,15 +163,13 @@ a.cart2.active.nav-link {
 }
 
 .search-btn:hover {
- background: none;
- color: #555;
+  background: none;
+  color: #555;
 }
 
 .btn-outline-success {
   --bs-btn-active-bg: none;
 }
-
-
 
 /*--------------- Navigation menu -----------------*/
 .nav-menu-link::after {
@@ -211,7 +209,6 @@ a.cart2.active.nav-link {
 .li-cat {
   color: #fff !important;
 }
-
 
 /*--------------- Carousel -----------------*/
 
@@ -647,8 +644,6 @@ th {
   justify-content: center;
 }
 
-
-
 /* .title-video {
   position: absolute;
   top: 50%;
@@ -836,8 +831,8 @@ th {
 }
 
 .title-season {
-    color: #ffffff;
-    font-size: 3rem;
+  color: #ffffff;
+  font-size: 3rem;
 }
 
 .text-season {
@@ -860,8 +855,6 @@ th {
 }
 
 /*--------------- Page filter products -----------------*/
-
-
 
 .side-filter.open {
   transform: translateX(0);
@@ -887,46 +880,36 @@ th {
   display: none;
 }
 
-
-
-
-
-
-
-
-
 @media (max-width: 990px) {
-
   .header-video {
     margin-top: 0px;
-}
+  }
 
-.nav-menu {
+  .nav-menu {
     display: none;
-}
+  }
 
-.side-filter {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 300px;
-  height: 100%;
-  background-color: #f1f1f1;
-  overflow-x: hidden;
-  transition: 0.5s;
-  transform: translateX(-100%);
-  z-index: 100;
-  padding-top: 50px;
-}
+  .side-filter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    transform: translateX(-100%);
+    z-index: 100;
+    padding-top: 50px;
+  }
 
-.bi-x-circle {
-  display: block;
-}
+  .bi-x-circle {
+    display: block;
+  }
 
-.btn-filter {
-  display: block;
-}
-
+  .btn-filter {
+    display: block;
+  }
 }
 
 @media (max-width: 768px) {

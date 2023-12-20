@@ -16,7 +16,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { useLoginMutation } from "../../slices/usersApiSlice";
 import { setCredentials } from "../../slices/authSlice";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import { CircularProgress } from "@mui/material";
 
 // TODO remove, this demo shouldn't need to reset the theme.
@@ -43,7 +43,7 @@ export default function SignInSide() {
   const redirect = searchParams.get("redirect") || "/v1/users";
 
   useEffect(() => {
-    if (userInfo) {
+    if (userInfo?.isAdmin) {
       navigate(redirect);
     }
   }, [navigate, userInfo, redirect]);
@@ -52,8 +52,12 @@ export default function SignInSide() {
     event.preventDefault();
     try {
       const res = await login({ email, password }).unwrap();
-      dispatch(setCredentials({ ...res }));
-      navigate(redirect);
+      if (res.isAdmin === true) {
+        dispatch(setCredentials({ ...res }));
+        navigate(redirect);
+      } else {
+        toast.error("You are not an admin");
+      }
     } catch (error) {
       toast.error(error?.data?.message || error.error);
       console.log(error);
@@ -172,14 +176,13 @@ export default function SignInSide() {
                 type="submit"
                 fullWidth
                 variant="contained"
-                
-                sx={{ 
-                  mt: 3, 
+                sx={{
+                  mt: 3,
                   height: 50,
-                  mb: 2, 
+                  mb: 2,
                   backgroundColor: "black",
-                  '&:hover': {
-                    backgroundColor: '#e75455', 
+                  "&:hover": {
+                    backgroundColor: "#e75455",
                   },
                 }}
                 disabled={isLoading}
@@ -190,6 +193,7 @@ export default function SignInSide() {
             </Box>
           </Box>
         </Grid>
+        <ToastContainer />
       </Grid>
     </ThemeProvider>
   );
