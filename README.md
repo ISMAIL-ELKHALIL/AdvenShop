@@ -1,5 +1,3 @@
-# AdvenShop
-
 # Adventure Shop
 
 ![Adventure Shop Logo](link-to-your-logo.png)
@@ -34,9 +32,9 @@ Adventure Shop is an e-commerce platform specializing in selling hiking products
 2.Install dependencies for backend,frontend store & dashboard :
  `npm run install-all`
 
-3.run the project
+3.Run the project
 
-### `npm run dev`
+ `npm run dev`
 
 Runs the app in the development mode.\
 
