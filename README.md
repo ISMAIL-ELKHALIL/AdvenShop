@@ -1,4 +1,5 @@
 # AdvenShop
+
 # Adventure Shop
 
 ![Adventure Shop Logo](link-to-your-logo.png)
@@ -30,3 +31,15 @@ Adventure Shop is an e-commerce platform specializing in selling hiking products
    ```bash
    git clone https://github.com/your-username/adventure-shop.git
 
+2.Install dependencies for backend,frontend store & dashboard :
+ `npm run install-all`
+
+3.run the project
+
+### `npm run dev`
+
+Runs the app in the development mode.\
+
+Open [http://localhost:3004](http://localhost:3004) to view Dashboard in your browser.
+
+Open [http://localhost:3002](http://localhost:3002) to view Store in your browser.
