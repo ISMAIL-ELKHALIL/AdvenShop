@@ -1,0 +1,34 @@
+{
+  "name": "i-shop",
+  "version": "1.0.0",
+  "description": "my first time learning to build an e-commerce app 2023",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./backend/server.js",
+    "server": "nodemon backend/server.js",
+    "dev": "concurrently \"npm run server\" \"npm run store\" \"npm run dashboard\" ",
+    "store": "npm start  --prefix frontend/store",
+    "dashboard": "npm start --prefix frontend/dashboard",
+    "data:import": "node backend/seeder.js -i",
+    "data:destroy": "node backend/seeder.js -d"
+  },
+  "author": "Ismail elkhalil",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "bootstrap-icons": "^1.11.2",
+    "colors": "^1.4.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.0.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.3.1",
+    "nodemon": "^3.0.1"
+  }
+}
