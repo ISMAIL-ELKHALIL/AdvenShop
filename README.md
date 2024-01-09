@@ -123,6 +123,8 @@ Adventure Shop leverages the following technologies:
 - Other:
   - OpenAI: Integration for additional services.
   - Cloudinary: Image and video Storage Management.
+  - PayPal REST APIs: Integration for payment services.
+  
 
 ## License
 
