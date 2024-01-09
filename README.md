@@ -122,7 +122,7 @@ Adventure Shop leverages the following technologies:
 
 - Other:
   - OpenAI: Integration for additional services.
-  - Cloudinary: Image and video management.
+  - Cloudinary: Image and video Storage Management.
 
 ## License
 
